@@ -86,20 +86,22 @@
 </div>
 
 </header>
-
-<!-- ================= INTRO SECTION ================= -->
-
-<section class="relative bg-[#2d2640] text-white min-h-[95vh]">
+<main>
+<!-- ================= HERO SECTION ================= -->
+<section class="relative bg-[#2d2640] text-white min-h-[95vh] pb-24">
 
   <!-- Desktop curves -->
-  <img src="images/bg-pattern-intro-right-desktop.svg"
-       class="hidden md:block absolute top-0 right-0 z-50" alt="Right desktop pattern"/>
+  <div class="hidden md:block absolute top-0 right-0 h-[430px] overflow-hidden z-50 pointer-events-none">
+    <img src="images/bg-pattern-intro-right-desktop.svg" class="relative -top-24" alt="Right desktop pattern"/>
+  </div>
   <img src="images/bg-pattern-intro-left-desktop.svg"
-       class="hidden md:block absolute top-[60%] -left--15 z-10" alt="Left desktop pattern" />
+       class="hidden md:block absolute top-[60%] -left-15 z-10" alt="Left desktop pattern" />
 
   <!-- Mobile curve -->
   <img src="images/bg-pattern-intro-right-mobile.svg"
-       class="md:hidden absolute top-0 right-0 z-20" alt="Mobile right pattern"/>
+       class="md:hidden absolute -bottom-20 right-0 z-20" alt="Mobile right pattern"/>
+  <img src="images/bg-pattern-intro-left-mobile.svg"
+       class="md:hidden absolute top-[45%] left-0 z-10" alt="Mobile left pattern" />
 
   <!-- Mobile image -->
   <img src="images/image-intro-mobile.jpg"
@@ -130,13 +132,14 @@
     <!-- Desktop image -->
     <div class="relative hidden md:block">
       <img src="images/image-intro-desktop.jpg"
-           class="absolute -top-44 right-0 w-[540px] shadow-2xl z-30" alt="Intro desktop image"/>
+           class="absolute -top-40 right-0 z-30 w-[560px]"
+             alt="Intro desktop image"/>
     </div>
 
   </div>
 </section>
 
-<!-- ================= section-2 ================= -->
+<!-- ================= SECTION-2 ================= -->
 <section class="max-w-7xl mx-auto px-6 py-24 text-center md:text-left">
   <div class="w-16 h-[1px] bg-gray-400 mb-10 mx-auto md:mx-0"></div>
 
@@ -171,7 +174,7 @@
   </div>
 </section>
 
-<!-- ================= Section-3  ================= -->
+<!-- ================= SECTION-3 ================= -->
 <section class="relative bg-[#2d2640] max-w-7xl mx-auto mb-24 overflow-hidden">
 
   <!-- Curves -->
@@ -180,7 +183,7 @@
   <img src="images/bg-pattern-how-we-work-mobile.svg"
        class="md:hidden absolute top-0 right-0" alt="How we work mobile pattern"/>
 
-  <div class="relative z-20 px-6 py-20 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-8">
+  <div class="relative z-20 px-6 py-20 mx-20 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-8">
     <h2 class="text-white text-4xl md:text-5xl max-w-xl">
       Find out more<br />about how we work
     </h2>
@@ -191,6 +194,7 @@
     </a>
   </div>
 </section>
+</main>
 
 <!-- ================= FOOTER ================= -->
 <footer class="relative bg-gray-100 overflow-hidden">
